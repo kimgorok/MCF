@@ -20,7 +20,6 @@ const TopBar1Text = styled.span`
 
   color: var(--grey-grey-800, #2f2a28);
 
-  /* Font/F16/Md */
   font-family: Spoqa Han Sans Neo;
   font-size: 16px;
   font-style: normal;
