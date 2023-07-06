@@ -12,9 +12,8 @@ const MyWhiteButton = styled.button`
   background: #fff;
 
   position: relative;
-`;
 
-const Text = styled.span`
+  // 텍스트
   color: var(--grey-grey-500, #767170);
   text-align: center;
 
@@ -31,9 +30,5 @@ interface ButtonProps {
 }
 
 export const WhiteButton: React.FC<ButtonProps> = ({ text }) => {
-  return (
-    <MyWhiteButton>
-      <Text>{text}</Text>
-    </MyWhiteButton>
-  );
+  return <MyWhiteButton>{text}</MyWhiteButton>;
 };

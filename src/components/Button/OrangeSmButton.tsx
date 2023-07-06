@@ -11,9 +11,8 @@ const MyOrangeSmButton = styled.button`
   background: var(--gd, linear-gradient(135deg, #ffbf7b 0%, #ff7152 100%));
 
   position: relative;
-`;
 
-const Text = styled.span`
+  // 텍스트
   color: var(--grey-grey-00, #fff);
   text-align: center;
 
@@ -30,9 +29,5 @@ interface ButtonProps {
 }
 
 export const OrangeSmButton: React.FC<ButtonProps> = ({ text }) => {
-  return (
-    <MyOrangeSmButton>
-      <Text>{text}</Text>
-    </MyOrangeSmButton>
-  );
+  return <MyOrangeSmButton>{text}</MyOrangeSmButton>;
 };

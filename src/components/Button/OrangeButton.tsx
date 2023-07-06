@@ -11,28 +11,26 @@ const MyOrangeButton = styled.button`
   background: var(--gd, linear-gradient(135deg, #ffbf7b 0%, #ff7152 100%));
 
   position: relative;
-`;
 
-const Text = styled.span`
+  // 텍스트
   color: var(--grey-grey-00, #fff);
   text-align: center;
 
+  /* F14/Md */
   font-family: Pretendard;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
-  letter-spacing: -0.32px;
+  line-height: 16px;
+  letter-spacing: -0.224px;
 `;
+
+// 나중에 상속하면서 텍스트 부분 줄이기 해야됨
 
 interface ButtonProps {
   text: string;
 }
 
 export const OrangeButton: React.FC<ButtonProps> = ({ text }) => {
-  return (
-    <MyOrangeButton>
-      <Text>{text}</Text>
-    </MyOrangeButton>
-  );
+  return <MyOrangeButton>{text}</MyOrangeButton>;
 };

@@ -12,17 +12,18 @@ const MyWhiteSmButton = styled.button`
   background: #fff;
 
   position: relative;
-`;
 
-const Text = styled.span`
-  display: inline-flex;
-  padding: 12px 16px;
-  justify-content: center;
-  align-items: center;
+  // 텍스트
+  color: var(--grey-grey-500, #767170);
+  text-align: center;
 
-  border-radius: 8px;
-  border: 1px solid var(--grey-grey-100, #dedbd9);
-  background: #fff;
+  /* F12/Md */
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.12px;
 `;
 
 interface ButtonProps {
@@ -30,9 +31,5 @@ interface ButtonProps {
 }
 
 export const WhiteSmButton: React.FC<ButtonProps> = ({ text }) => {
-  return (
-    <MyWhiteSmButton>
-      <Text>{text}</Text>
-    </MyWhiteSmButton>
-  );
+  return <MyWhiteSmButton>{text}</MyWhiteSmButton>;
 };
