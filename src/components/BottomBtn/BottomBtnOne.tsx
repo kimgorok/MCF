@@ -23,9 +23,8 @@ const MyButtonOne = styled.button`
 
   border-radius: 8px;
   background: var(--gd, linear-gradient(135deg, #ffbf7b 0%, #ff7152 100%));
-`;
 
-const Text = styled.span`
+  // 텍스트
   color: var(--grey-grey-00, #fff);
   text-align: center;
 
@@ -45,9 +44,7 @@ interface ButtonProps {
 export const ButtonOne: React.FC<ButtonProps> = ({ text }) => {
   return (
     <ButtonOneBox>
-      <MyButtonOne>
-        <Text>{text}</Text>
-      </MyButtonOne>
+      <MyButtonOne>{text}</MyButtonOne>
     </ButtonOneBox>
   );
 };

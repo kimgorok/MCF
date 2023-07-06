@@ -23,9 +23,8 @@ const LeftButton = styled.button`
   border-radius: 8px;
   border: 1px solid var(--grey-grey-100, #dedbd9);
   background: #fff;
-`;
 
-const LeftText = styled.span`
+  // 텍스트
   color: var(--grey-grey-500, #767170);
   text-align: center;
 
@@ -47,9 +46,8 @@ const RightButton = styled.button`
 
   border-radius: 8px;
   background: var(--gd, linear-gradient(135deg, #ffbf7b 0%, #ff7152 100%));
-`;
 
-const RightText = styled.span`
+  //텍스트
   color: var(--grey-grey-00, #fff);
   text-align: center;
 
@@ -70,12 +68,8 @@ interface ButtonProps {
 export const ButtonTwo: React.FC<ButtonProps> = ({ text1, text2 }) => {
   return (
     <ButtonTwoBox>
-      <LeftButton>
-        <LeftText>{text1}</LeftText>
-      </LeftButton>
-      <RightButton>
-        <RightText>{text2}</RightText>
-      </RightButton>
+      <LeftButton>{text1}</LeftButton>
+      <RightButton>{text2}</RightButton>
     </ButtonTwoBox>
   );
 };
