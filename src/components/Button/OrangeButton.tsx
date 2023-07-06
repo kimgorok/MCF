@@ -13,7 +13,7 @@ const MyOrangeButton = styled.button`
   position: relative;
 `;
 
-const Text = styled.p`
+const Text = styled.span`
   color: var(--grey-grey-00, #fff);
   text-align: center;
 

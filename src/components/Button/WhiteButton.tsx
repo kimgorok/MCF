@@ -14,7 +14,7 @@ const MyWhiteButton = styled.button`
   position: relative;
 `;
 
-const Text = styled.p`
+const Text = styled.span`
   color: var(--grey-grey-500, #767170);
   text-align: center;
 

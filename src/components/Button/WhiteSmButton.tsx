@@ -14,7 +14,7 @@ const MyWhiteSmButton = styled.button`
   position: relative;
 `;
 
-const Text = styled.p`
+const Text = styled.span`
   display: inline-flex;
   padding: 12px 16px;
   justify-content: center;
