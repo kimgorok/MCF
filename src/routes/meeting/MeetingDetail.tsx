@@ -10,7 +10,8 @@ const Wrapper = styled.div`
 export const Header = styled.div`
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 12px;
+  border-bottom: 1px solid #d8d8d8;
 `;
 
 const Title = styled.div`

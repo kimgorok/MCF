@@ -2,7 +2,8 @@ import { useMatch, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  width: 390px;
+  width: 416px;
+  height: 886px;
   background-color: white;
   position: relative;
 `;
@@ -13,11 +14,10 @@ const Header = styled.div`
   padding: 20px;
   border-bottom: 1px solid #d8d8d8;
   background-color: white;
-  font-weight: bold;
 `;
 
 const MeetingListBox = styled.div`
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 50px;
 `;
 
