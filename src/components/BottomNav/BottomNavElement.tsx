@@ -16,6 +16,7 @@ const BotNavEleOffWrapper = styled.button`
   background: var(--grey-grey-00, #fff);
 `;
 
+// 이거 크기 조절이 안됨
 const BigHomeIcon = styled(HomeIcon)`
   width: 32px;
   height: 32px;
