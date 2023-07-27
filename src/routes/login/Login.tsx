@@ -1,11 +1,12 @@
 // Login.tsx
 import React from "react";
-import { Button } from "../../components/Button";
+
 import { InputBox } from "../../components/loginComponenets/InputBox";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
+import { OrangeButton } from "../../components/Button";
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   width: 416px;
   height: 886px;
   background-color: var(--grey-grey-00, #fff);
@@ -113,7 +114,7 @@ function Login() {
         </InputBoxBox>
 
         <ButtonBox>
-          <Button text="로그인" />
+          <OrangeButton text="로그인" />
         </ButtonBox>
         {errors.passWord?.message}
       </form>
